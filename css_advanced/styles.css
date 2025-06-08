@@ -1,0 +1,543 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logocolor {
+  filter: brightness(0) invert(1);
+}
+
+/* Site name next to logo */
+.site-name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-left: 0; /* ensure no margin */
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #000; /* fallback color */
+  color: #fff;
+}
+
+/* Banner Background Setup */
+.landing-wrapper {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 60px;
+  z-index: 1;
+}
+
+/* Grayscale banner image with dark blue gradient at bottom */
+.landing-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("image/Object.png");
+  background-size: cover;
+  background-position: center;
+  background: radial-gradient rgba(7, 22, 41, 1);
+
+  z-index: -1;
+  opacity: 1;
+}
+
+
+/* Navigation */
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: rgba(0, 0, 0, 0.5);  */
+  padding: 20px;
+}
+
+nav img {
+  height: 50px;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  vertical-align: middle;
+  font-family: 'Coiny', cursive;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #C271FF;
+  color: #fff;
+}
+
+/* Hero Section */
+.landing-wrapper > section:first-of-type {
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+/* Headline */
+.landing-wrapper > section:first-of-type h1 {
+  font-size: 100px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Subheadings */
+.landing-wrapper > section:first-of-type span {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 14px;
+  border-radius: 20px;
+}
+
+/* CTA Button */
+.landing-wrapper > section:first-of-type button {
+  display: block;
+  margin: 30px auto 0;
+  background-color: #C271FF;
+  color: white;
+  padding: 14px 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.landing-wrapper > section:first-of-type button:hover {
+  background-color: #a347e4;
+  transform: scale(1.05);
+}
+
+/* "Learn from the pros" Section */
+.landing-wrapper > section:first-of-type > div:nth-child(2) {
+  margin-top: 80px;
+}
+
+.landing-wrapper > section:first-of-type h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+/* Instructor Cards Grid */
+.landing-wrapper > section:first-of-type > div:nth-child(2) > div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.landing-wrapper > section:first-of-type > div:nth-child(2) > div > div {
+  padding: 20px;
+  border-radius: 16px;
+  width: 180px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing-wrapper > section:first-of-type > div:nth-child(2) > div > div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.landing-wrapper > section:first-of-type img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.landing-wrapper > section:first-of-type h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.landing-wrapper > section:first-of-type p {
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+
+/* Testimonial Section */
+.testimonial {
+  background-color: #C271FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.testimonial-img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fdfcfd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.testimonial-content {
+  max-width: 600px;
+}
+
+.testimonial-content blockquote {
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.testimonial-content h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.testimonial-role {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+/* Tutorials Section */
+.tutorials {
+  max-width: auto;
+  margin: auto auto;
+  padding: 0 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+.tutorials h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+/* Cards Container */
+.tutorial-cards {
+  display: grid;
+  /*grid-template-columns: 1fr;*/
+  gap: 190px;
+  width: 700px;       /* Reduce card width */
+  height: 600px;       /* Adjust height as needed */
+  /*padding: 10px;    /* Reduce spacing inside */
+  /*border-radius: 3px;*/
+}
+
+/* Tutorial Card */
+.tutorial-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(194, 113, 255, 0.3);
+  transition: transform 0.3s ease;
+  text-align: left;
+  cursor: pointer;
+}
+
+.tutorial-card:hover {
+  transform: translateY(-10px);
+}
+
+.tutorial-card img:first-child {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.tutorial-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.tutorial-card p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Author */
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.author img {
+  width: 4px;         /* Small size */
+  height: 4px;        /* Match width for circle */
+  border-radius: 50%;  /* Makes it circular */
+  object-fit: cover;   /* Ensures the image covers the circle shape */
+}
+
+
+.author h4 {
+  font-size: 10px;
+  font-weight: 300;
+  margin: 0;
+}
+
+
+/* Stars */
+.stars {
+  display: flex;
+  gap: 5px;
+  color: #ad2cab;
+  margin-bottom: 10px;
+}
+
+/* Responsive for tablets and desktops */
+@media (min-width: 768px) {
+  .tutorial-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .tutorial-cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+/* Membership Section */
+.membership {
+  max-width: auto;
+  margin: auto auto;
+  padding: 0 20px;
+  text-align: center;
+  background-color: #060225;
+  
+}
+
+.membership h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.membership-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.membership-cards > div {
+  background-color: #070225;
+  padding: 20px;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(194, 113, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.membership-cards > div:hover {
+  transform: translateY(-8px);
+}
+
+.membership-cards img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.membership-cards h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.membership-cards p {
+  font-size: 14px;
+  color: #fcfafa;
+}
+
+.membership button {
+  background-color: blueviolet;
+  color: white;
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.membership button:hover {
+  background-color: #9d56d4;
+}
+
+
+
+/* FAQ Section */
+.faq {
+  max-width: auto;
+  margin: auto auto;
+  padding: 0 20px;
+  text-align: center;
+  background-color: #f7f7f7;
+}
+
+.faq h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #000;
+}
+
+.faq-columns {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.faq-column {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(194, 113, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-6px);
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.faq-item p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+/* Footer */
+footer {
+  background-color: #02011f;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.logocolor {
+  max-height: 50px;
+  filter: brightness(0) invert(1); 
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.social-icons i {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: blueviolet;
+}
+
+footer p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
