@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto; 
+}
+
+article {
+  flex: 2;
+  overflow-y: auto; /* Scroll if content overflows vertically */
+  padding: 1rem;
+}
+
+
+aside {
+  flex: 1;
+  overflow-y: auto; /* Scroll if content overflows vertically */
+  padding: 1rem;
+}
+
+header, footer {
+  padding: 1rem;
+  background-color: #f0f0f0;
+}
