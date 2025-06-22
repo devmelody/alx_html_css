@@ -1,129 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Headphones | Header</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="0-styles.css" />
-  </head>
-  <body>
-    <div class="container">
-    <header class="hero-section">
-      <nav class="navbar">
-        <button class="menu-toggle" aria-label="Open menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-
-        <div class="logo"><img src="assets/images/logo-h.svg" /></div>
-        <ul class="nav-links">
-          <li><a href="#works">What we do</a></li>
-          <li><a href="#results">Our results</a></li>
-          <li><a href="#contact">Contact us</a></li>
-        </ul>
-      </nav>
-      <div class="hero-heading">
-        <h1 class="header-text">Lorem ipsum dolor set amet lorem ipsum</h1>
-        <p class="header-paragraph">
-          Lorem ipsum dolor set Amet lorem ipsum dolor set
-        </p>
-      </div>
-      <button class="action-btn btn1">CALL TO ACTION</button>
-      <div class="header-paragraph2">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit. Pellentesque vitae velit ex. Mauris
-          dapibus risus quis suscipit vulputate. Integer sed justo nec nulla
-          rhoncus laoreet. Sed bibendum, sapien in fermentum placerat, justo
-          erat consequat purus, id lobortis dui lorem id erat.
-        </p>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>headphones</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="0-styles.css">
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <img src="media/logo_headphones.png" alt="logo">
+            <label class="hamburger-menu">
+                <input type="checkbox" />
+            </label>
+            <ul>
+                <li><a href="#what-we-do">what we do</a></li>
+                <li><a href="#our-results">our results</a></li>
+                <li><a href="#contact-us">contact us</a></li>
+            </ul>
+        </nav>
     </header>
-
     <main>
-      <!-- What we do section-->
-      <section class="works">
-        <div class="works-paragraph">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-        </div>
-        <div class="icon-group">
-          <img src="assets/images/wave-icon.svg" class="icon" alt="wave-icon" />
-          <img
-            src="assets/images/video-icon.svg"
-            class="icon"
-            alt="video-icon"
-          />
-          <img
-            src="assets/images/music-icon.svg"
-            class="icon"
-            alt="music-icon"
-          />
-          <img
-            src="assets/images/sound-icon.svg"
-            class="icon"
-            alt="sound-icon"
-          />
-        </div>
-      </section>
-      <!--Results section-->
-      <section class="results-section">
-        <div results-paragraph>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur.
-          </p>
-        </div>
-        <div class="icon-group2">
-          <div class="pentagon">90%</div>
-          <div class="pentagon">80%</div>
-          <div class="pentagon">70%</div>
-          <div class="pentagon">60%</div>
-        </div>
-      </section>
-      <!--Contact-->
-      <section class="contact-section">
-        <form class="form">
-          <div class="input-section">
-            <label for="Name"><input type="text" placeholder="Name" /></label>
-            <label for="Email"><input type="text" placeholder="Email" /></label>
-            <label for="Message"
-              ><input type="text" placeholder="Message"
-            /></label>
-          </div>
-        </form>
-        <button class="action-btn">CALL TO ACTION</button>
-      </section>
-      <!--Footer-->
-      <footer class="footer">
-        <div class="socials">
-          <img src="assets/images/logo-h.svg" class="tilt-left" />
-          <img src="assets/images/social-icons.svg" />
-        </div>
-        <p class="copyright">&copy;headphones 2020</p>
-      </footer>
+        <section class="landing">
+            <div class="landing-title container">
+                <div class="text">
+                    <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+                    <p>Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+                </div>
+                <div class="button"><button>CALL TO ACTION</button></div>
+                <p class="p-only">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </div>
+        </section>
     </main>
-    </div>
-    <script src="script.js"></script>
-  </body>
+</body>
 </html>
